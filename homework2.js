@@ -184,7 +184,7 @@ function displayInput() {
     }
 
     output += "<tr><td style='text-align: right; padding: 10px; font-weight: bold;'>Password</td>";
-    output += "<td style='padding: 10px;'>" + "*".repeat(password.length) + " ()</td>";
+    output += "<td style='padding: 10px;'>" + "*".repeat(password.length) + "</td>";
     if (validationResults.password && validationResults.passwordMatch) {
         output += "<td style='padding: 10px; color: green;'>pass</td></tr>";
     } else {
