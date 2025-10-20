@@ -162,17 +162,17 @@ function displayInput() {
     output += "<tr><td style='text-align: right; padding: 10px; font-weight: bold;'>Insurance</td>";
     output += "<td style='padding: 10px;' colspan='2'>" + (insurance ? insurance.value : "Not selected") + "</td></tr>";
 
-    // Pain Level
+// Pain Level
     output += "<tr><td style='text-align: right; padding: 10px; font-weight: bold;'>Level of Pain indicated</td>";
     output += "<td style='padding: 10px;' colspan='2'>" + painLevel + " / 10</td></tr>";
 
-    // Description/Symptoms
+// Description/Symptoms
     if (description) {
         output += "<tr><td style='text-align: right; padding: 10px; font-weight: bold; vertical-align: top;'>Described Symptoms</td>";
         output += "<td style='padding: 10px;' colspan='2'>" + description + "</td></tr>";
     }
 
-    // User Credentials Section
+ // User Credentials Section
     output += "<tr><td colspan='3' style='padding: 20px 10px 10px 10px;'><hr></td></tr>";
     
     output += "<tr><td style='text-align: right; padding: 10px; font-weight: bold;'>User ID</td>";
@@ -184,7 +184,7 @@ function displayInput() {
     }
 
     output += "<tr><td style='text-align: right; padding: 10px; font-weight: bold;'>Password</td>";
-    output += "<td style='padding: 10px;'>" + "*".repeat(password.length) + " (normally we wouldn't display this)</td>";
+    output += "<td style='padding: 10px;'>" + "*".repeat(password.length) + " ()</td>";
     if (validationResults.password && validationResults.passwordMatch) {
         output += "<td style='padding: 10px; color: green;'>pass</td></tr>";
     } else {
@@ -197,7 +197,7 @@ function displayInput() {
     output += "</table>";
     output += "</div>";
 
-    // Display the review
+// Display the review
     document.getElementById("reviewArea").innerHTML = output;
 }
 
