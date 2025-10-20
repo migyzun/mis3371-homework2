@@ -12,13 +12,13 @@ const currentDateElement = document.getElementById("currentDate");
 const currentDate = new Date().toLocaleDateString();
 currentDateElement.innerHTML = currentDate;
 
-// Update pain level display - FIXED: Changed "Slider" to "slider" (lowercase)
+// Update pain level display
 document.getElementById("slider").addEventListener("input", function() {
     const painLevel = this.value;
     document.getElementById("painValue").textContent = painLevel;
 });
 
-// NEW ENHANCED DISPLAY INPUT FUNCTION WITH VALIDATION AND FORMATTING
+//DISPLAY INPUT FUNCTION WITH VALIDATION AND FORMATTING
 function displayInput() {
     // Run all validations first
     let validationResults = {
@@ -201,7 +201,7 @@ function displayInput() {
     document.getElementById("reviewArea").innerHTML = output;
 }
 
-// Update pain level function - NEW FUNCTION ADDED
+// Update pain level function
 function updatePainLevel(value) {
     document.getElementById("painValue").textContent = value;
 }
