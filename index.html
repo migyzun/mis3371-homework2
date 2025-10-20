@@ -361,6 +361,7 @@ Description: This is a form that will collect the users information and use it t
                                 <span>Female</span>
                                 <input type="radio" name="msex" value="Other">
                                 <span>Other</span>
+                                <span class="error-message" id="genderError"></span>
                             </tr>
                         <!-- Marital Status -->
                             </tr>
@@ -398,12 +399,12 @@ Description: This is a form that will collect the users information and use it t
                                 <td class="check" colspan="2">
                                     <fieldset>
                                         <legend>Do you have or have had any of the following?:</legend>
-                                        <label><input type="checkbox" id="HeartDisease" name=medicalConditions> Heart Disease</label>
-                                        <label><input type="checkbox" id="Measles" name=medicalConditions> Measles</label>
-                                        <label><input type="checkbox" id="Meningitis" name=medicalConditions> Meningitis </label>
-                                        <label><input type="checkbox" id="Hepatitis" name=medicalConditions> Hepatitis</label>
-                                        <label><input type="checkbox" id="Cancer" name=medicalConditions> Cancer</label>
-                                        <label><input type="checkbox" id="other" name=medicalConditions> Other <input type="text" maxlength="30"></label>
+                                        <label><input type="checkbox" id="HeartDisease" name="HeartDisease" value="Heart Disease"> Heart Disease</label>
+                                        <label><input type="checkbox" id="Measles" name="Measles" value="Measles"> Measles</label>
+                                        <label><input type="checkbox" id="Meningitis" name="Meningitis" value="Meningitis"> Meningitis </label>
+                                        <label><input type="checkbox" id="Hepatitis" name="Hepatitis" value="Hepatitis"> Hepatitis</label>
+                                        <label><input type="checkbox" id="Cancer" name="Cancer" value="Cancer"> Cancer</label>
+                                        <label><input type="checkbox" id="other" name="other" value="Other"> Other <input type="text" maxlength="30" id="otherCondition" name="otherCondition"></label>
                                        
                                     </fieldset>
                                 </td>
@@ -427,6 +428,7 @@ Description: This is a form that will collect the users information and use it t
                                         oninput="updatePainLevel(this.value)">10
                                     <br>
                                         Your current pain level: <span id="painValue">0</span>
+                                        <span class="error-message" id="painError"></span>
                                     </fieldset>
                                 </td>
                             </tr>
