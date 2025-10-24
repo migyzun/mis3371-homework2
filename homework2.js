@@ -2,8 +2,8 @@
 Program name: homework2.js
 Name: Jose Miguel Zuniga
 Date Created: 10/20/25
-Date Last Edited: 10/20/2025
-Version: 1.0
+Date Last Edited: 10/24/2025
+Version: 1.2
 Description: Homework 2 JS
 */
 
